@@ -31,6 +31,11 @@ app.use(morgan(':method :url :status :res[content-length] - :response-time ms :p
 const generateId = () =>{
     return Math.floor(Math.random() * 1000)
 }
+
+app.get('/api',(request, response) =>{
+  response.send("try /api/persons")
+})
+
 app.get('/api/persons', (request, response) => {
     response.json(persons)
   })

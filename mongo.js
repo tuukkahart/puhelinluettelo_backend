@@ -18,7 +18,7 @@ const personSchema = new mongoose.Schema({
     number: Number,
   })
   
-  const Person = mongoose.model('Person', personSchema)
+const Person = mongoose.model('Person', personSchema)
   
   
 
